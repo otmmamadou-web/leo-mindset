@@ -1340,6 +1340,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+                // Images
+        if (data.images && data.images.length > 0) {
+
+            for (let i = 0; i < data.images.length; i++) {
+
+                const img = document.getElementById("img" + (i + 1));
+
+                if (img) {
+
+                    img.src = data.images[i];
+
+                }
+
+            }
+
+        }
+
+
     </script>
 
 </body>
