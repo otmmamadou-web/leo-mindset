@@ -1340,6 +1340,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+        try {
+
                 // Images
         if (data.images && data.images.length > 0) {
 
@@ -1356,6 +1358,15 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
         }
+
+                catch (e) {
+
+        console.error(e);
+
+    }
+
+}
+
 
 
     </script>
